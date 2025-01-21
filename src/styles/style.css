@@ -1,0 +1,142 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* Stack header above everything */
+    align-items: center;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Spans across the top */
+    background-color: #1f3b4d; /* Dark teal/blue */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in width */
+}
+
+.header-photo {
+    flex: 0 0 150px; /* Fixed width for the photo */
+}
+
+.header-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-info {
+    flex: 1;
+    text-align: left;
+}
+
+.header-info h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-info h2 {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+    font-weight: normal;
+    color: #cce7ef; /* Light blue for contrast */
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Section */
+.sidebar {
+    flex: 0 0 300px;
+    background-color: #40e0d0; /* Turquoise */
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul,
+.sidebar p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Main Content Section */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: disc;
+    line-height: 1.6;
+}
+
+.section ul ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .header-photo {
+        margin-bottom: 10px;
+    }
+
+    .header-info {
+        margin-left: 0;
+    }
+}
