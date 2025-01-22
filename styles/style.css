@@ -140,3 +140,73 @@ body {
         margin-left: 0;
     }
 }
+
+/* Footer Styling */
+.footer {
+    width: 100%;
+    background-color: #1f3b4d; /* Matches header color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 3px solid #40e0d0; /* Turquoise accent */
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center;
+    margin: 0 auto;
+}
+
+.qr-code {
+    text-align: center;
+    flex: 1; /* Ensures QR code stays on the left */
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.center-section {
+    text-align: center;
+    flex: 1; /* Center section in the middle */
+}
+
+.center-section p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.center-section p:first-child {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif; /* Highlight the name */
+}
+
+.center-section p:last-child {
+    font-style: italic;
+    color: #cce7ef; /* Light blue accent */
+}
+
+.footer-links {
+    text-align: right;
+    flex: 1; /* Push links to the right */
+}
+
+.footer-links a img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1); /* Makes icons white */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-links a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8) invert(1); /* Hover effect */
+}
