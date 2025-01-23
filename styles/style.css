@@ -205,6 +205,7 @@ body {
     filter: none;
     transition: transform 0.3s ease, filter 0.3s ease;
     opacity: 0.7;
+    display: inline-block;
 }
 
 .footer-links a:hover img {
